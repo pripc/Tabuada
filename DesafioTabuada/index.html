@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(48, 48, 48);
+            margin:2px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #caixaTxt{
+            text-align: center;
+            background-color: rgb(184, 175, 175);
+            border-radius: 20px;
+            margin-right: 20%;
+            margin-left: 20%;
+                
+        }
+        main section h1{
+            text-align:center;
+            color:white;
+            font-weight: 700;
+            font-size:35px;
+            
+            
+        }
+        .TextCaixa{
+            margin-bottom: 5px;
+            padding-top: 10px;
+        }
+        .input{
+            height:15px;
+            border-radius: 10px;
+            border-style: none;
+        }
+        p{
+            margin:10px auto auto 10px;
+        }
+        button{
+            background-color: blue;
+            border-radius: 10px;
+            color:white;
+            margin:10px auto 5px auto;
+            width:100px;
+            height:30px;
+            border-style: none;
+        }
+        #res{
+            padding-bottom:10px;
+            margin-top:0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo DNC.PNG" alt="Logomarca da Empresa DNC">
+    </header>
+    <main>
+        <section>
+            <h1>Tabuada</h1>
+        </section>
+        <section id="caixaTxt">
+            <p class="TextCaixa">Qual tabuada você deseja conhecer?</p>
+            <p><input class="input" id="numTab" type="number"></p>
+            <p class="TextCaixa">Até que número você quer?</p>
+            <p><input class="input" id="qtdTab" type="number"></p>
+            <button onclick="calcularTabuada()"> Calcular</button>
+        
+            <p id="res">Preencha os valores acima para ver a tabuada do número informado</p>
+        </section>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+</html>
